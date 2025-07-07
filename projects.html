@@ -43,7 +43,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
            
@@ -62,7 +62,7 @@
           </li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li> 
+           
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -83,7 +83,7 @@
     <!-- Page Title -->
     <div class="page-title accent-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio</h1>
+        <h1 class="mb-2 mb-lg-0">Projects</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -93,13 +93,91 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Portfolio Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="portfolio section">
 
       <div class="container">
-        Projects Content
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+  <h2>Our Projects</h2>
+  <p>Empowering communities with reliable telecom infrastructure</p>
+</div>
+
+<!-- Project 1 -->
+<div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+  <div class="col-lg-6">
+    <h3>OSP Fiber Optic Installation</h3>
+    <p>Deployed underground and aerial fiber lines, connecting rural municipalities to high-speed internet.</p>
+  </div>
+  <div class="col-lg-6">
+    <div class="swiper project-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/projects/osp1.webp" style="height: 500px; object-fit: cover;" class="img-fluid w-100" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/projects/osp2.png" style="height: 500px; object-fit: cover;" class="img-fluid w-100" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="row align-items-center flex-lg-row-reverse mb-5" data-aos="fade-up" data-aos-delay="200">
+  <div class="col-lg-6">
+    <h3>Cell Tower Construction</h3>
+    <p>Constructed and commissioned multiple cellular towers in mountainous regions, boosting signal coverage for local communities and emergency responders.</p>
+  </div>
+  <div class="col-lg-6">
+    <div class="swiper project-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/projects/tower1.jpg" style="height: 500px; object-fit: cover;" class="img-fluid w-100" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/projects/tower2.jpg" style="height: 500px; object-fit: cover;" class="img-fluid w-100" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 -->
+<div class="row align-items-center mb-5" data-aos="fade-up" data-aos-delay="300">
+  <div class="col-lg-6">
+    <h3>Barangay Broadband Program</h3>
+    <p>Launched HiWifi through community access points across selected barangays in partnership with local governments to promote digital inclusion.</p>
+  </div>
+  <div class="col-lg-6">
+    <div class="swiper project-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/projects/bbp1.jpg" class="img-fluid w-100" style="height: 500px; object-fit: cover;" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/projects/bbp2.jpg" class="img-fluid w-100"style="height: 500px; object-fit: cover;" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="row align-items-center flex-lg-row-reverse mb-5" data-aos="fade-up" data-aos-delay="400">
+  <div class="col-lg-6">
+    <h3>HDD Underground Cabling</h3>
+    <p>Utilized Horizontal Directional Drilling (HDD) technology to install fiber optic cables beneath roads, rivers, and urban zones with minimal surface disruption. This enabled secure and efficient underground connectivity for enterprise clients and ISPs.</p>
+  </div>
+  <div class="col-lg-6">
+    <div class="swiper project-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/projects/hdd1.jpg" class="img-fluid w-100" style="height: 500px; object-fit: cover;" alt="HDD Project 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/projects/hdd2.jpg" class="img-fluid w-100" style="height: 500px; object-fit: cover;" alt="HDD Project 2">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+
   
-      </div><!-- End Portfolio Container -->
+      </div>
+      <!-- End Projects Container -->
 
         </div>
 
@@ -147,7 +225,7 @@
           <ul>
             <li><a href="#">OSP</a></li>
             <li><a href="#">Barangay Broadband Project</a></li>
-            <li><a href="#">Hitok</a></li>
+            <li><a href="https://raganet30.github.io/hitok/" target="_blank">Hitok App</a></li>
             <li><a href="#">Other Serivces</a></li>
           </ul>
         </div>
@@ -193,6 +271,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.project-swiper').forEach(swiperEl => {
+      new Swiper(swiperEl, {
+        loop: true,
+        pagination: {
+          el: swiperEl.querySelector('.swiper-pagination'),
+          clickable: true,
+        },
+      });
+    });
+  });
+</script>
 
 </body>
 

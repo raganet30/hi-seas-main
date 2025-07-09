@@ -1068,6 +1068,54 @@ section,
   z-index: 1;
 }
 
+
+.timeline-modern {
+  position: relative;
+  padding-top: 20px;
+  border-top: 2px dashed #3e3b3b;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.timeline-step {
+  position: relative;
+  min-width: 200px;
+  padding: 0 10px;
+  scroll-snap-align: center;
+}
+
+.timeline-step .dot {
+  width: 20px;
+  height: 20px;
+  background-color: #bd261b;
+  border-radius: 50%;
+  border: 5px solid #f8d2cd;
+  margin: 0 auto;
+  position: relative;
+  top: -11px;
+  z-index: 1;
+}
+
+.timeline-modern::-webkit-scrollbar {
+  height: 6px;
+}
+.timeline-modern::-webkit-scrollbar-thumb {
+  background: #bd261b;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .timeline-modern {
+    flex-wrap: nowrap;
+  }
+  .timeline-step {
+    min-width: 180px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/

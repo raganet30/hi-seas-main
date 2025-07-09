@@ -1,18 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Timeline Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Wrapper for horizontal scrolling timeline */
+    .timeline-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Horizontal timeline container */
+    .timeline-modern {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 40px 0;
+      border-top: 2px dashed #2e2e2e;
+      scroll-behavior: smooth;
+    }
+
+    .timeline-modern::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Timeline item */
+    .timeline-step {
+      flex: 0 0 auto;
+      min-width: 200px;
+      text-align: center;
+      padding: 0 10px;
+      scroll-snap-align: center;
+    }
+
+    .timeline-step .dot {
+      width: 20px;
+      height: 20px;
+      background-color: #bd261b;
+      border-radius: 50%;
+      border: 5px solid #f8d2cd;
+      margin: 0 auto;
+      position: relative;
+      top: -11px;
+      z-index: 1;
+    }
+
+    /* Arrow buttons (carousel style) */
+    .timeline-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .timeline-arrow-left {
+      left: 0;
+    }
+
+    .timeline-arrow-right {
+      right: 0;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-step {
+        min-width: 180px;
+      }
+
+      .timeline-arrow {
+        padding: 6px 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1 style="
-    font-family: 'Antonio', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    text-transform: uppercase;
-  ">
-    HI-SEAS CO. LTD. INC.
-  </h1>
+
+<section id="timeline-modern" class="section py-5">
+  <div class="container text-center">
+    <h2 class="inner-title mb-3" data-aos="fade-down">Company Timeline</h2>
+    <p class="mb-5 text-muted" data-aos="fade-up"></p>
+
+    <div class="timeline-wrapper">
+      <!-- Arrows on both sides -->
+      <button class="timeline-arrow timeline-arrow-left" id="timeline-prev">&#8592;</button>
+      <button class="timeline-arrow timeline-arrow-right" id="timeline-next">&#8594;</button>
+
+      <!-- Scrollable Timeline -->
+      <div class="timeline-modern">
+        <div class="timeline-step">
+          <div class="dot" title="Launched HDD Non-trenching operations"></div>
+          <h6 class="fw-bold mt-3">June 2019</h6>
+          <p class="small">Launched HDD Non-trenching operations</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="Conducted OSP Survey & Design"></div>
+          <h6 class="fw-bold mt-3">Oct. 2019</h6>
+          <p class="small">Conducted OSP Survey & Design</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="Began OSP Implementation"></div>
+          <h6 class="fw-bold mt-3">Dec. 2019</h6>
+          <p class="small">Began OSP Implementation</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="BSC Data Center launched"></div>
+          <h6 class="fw-bold mt-3">Feb. 2020</h6>
+          <p class="small">BSC Data Center launched</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="Partnership formed with ALBAY"></div>
+          <h6 class="fw-bold mt-3">Mar. 2020</h6>
+          <p class="small">Formed Partnership with ALBAY</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="BTS, IBS, FTTH & TI Installation Projects"></div>
+          <h6 class="fw-bold mt-3">2020–Present</h6>
+          <p class="small">BTS, IBS, FTTH & TI Installation Projects</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="Network Maintenance Services"></div>
+          <h6 class="fw-bold mt-3">Apr. 2021–Present</h6>
+          <p class="small">Network Maintenance Services</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="dot" title="Barangay Broadband Project"></div>
+          <h6 class="fw-bold mt-3">June 2022–Present</h6>
+          <p class="small">Barangay Broadband Project</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript to handle scrolling -->
+<script>
+  const timeline = document.querySelector('.timeline-modern');
+  const prevBtn = document.getElementById('timeline-prev');
+  const nextBtn = document.getElementById('timeline-next');
+  const scrollAmount = 250;
+
+  prevBtn.addEventListener('click', () => {
+    timeline.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    timeline.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>

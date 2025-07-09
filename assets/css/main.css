@@ -1067,53 +1067,80 @@ section,
   object-position: center;
   z-index: 1;
 }
+ /* Wrapper for horizontal scrolling timeline */
+    .timeline-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
 
+    /* Horizontal timeline container */
+    .timeline-modern {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 40px 0;
+      border-top: 2px dashed #2e2e2e;
+      scroll-behavior: smooth;
+    }
 
-.timeline-modern {
-  position: relative;
-  padding-top: 20px;
-  border-top: 2px dashed #3e3b3b;
-  gap: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
+    .timeline-modern::-webkit-scrollbar {
+      display: none;
+    }
 
-.timeline-step {
-  position: relative;
-  min-width: 200px;
-  padding: 0 10px;
-  scroll-snap-align: center;
-}
+    /* Timeline item */
+    .timeline-step {
+      flex: 0 0 auto;
+      min-width: 200px;
+      text-align: center;
+      padding: 0 10px;
+      scroll-snap-align: center;
+    }
 
-.timeline-step .dot {
-  width: 20px;
-  height: 20px;
-  background-color: #bd261b;
-  border-radius: 50%;
-  border: 5px solid #f8d2cd;
-  margin: 0 auto;
-  position: relative;
-  top: -11px;
-  z-index: 1;
-}
+    .timeline-step .dot {
+      width: 20px;
+      height: 20px;
+      background-color: #bd261b;
+      border-radius: 50%;
+      border: 5px solid #f8d2cd;
+      margin: 0 auto;
+      position: relative;
+      top: -11px;
+      z-index: 1;
+    }
 
-.timeline-modern::-webkit-scrollbar {
-  height: 6px;
-}
-.timeline-modern::-webkit-scrollbar-thumb {
-  background: #bd261b;
-  border-radius: 10px;
-}
+    /* Arrow buttons (carousel style) */
+    .timeline-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
 
-@media (max-width: 768px) {
-  .timeline-modern {
-    flex-wrap: nowrap;
-  }
-  .timeline-step {
-    min-width: 180px;
-  }
-}
+    .timeline-arrow-left {
+      left: 0;
+    }
+
+    .timeline-arrow-right {
+      right: 0;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-step {
+        min-width: 180px;
+      }
+
+      .timeline-arrow {
+        padding: 6px 10px;
+      }
+    }
 
 
 /*--------------------------------------------------------------

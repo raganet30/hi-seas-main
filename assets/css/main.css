@@ -172,7 +172,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 80px;
+  max-height: 50px;
   margin-right: 8px;
 }
 
@@ -228,6 +228,22 @@ h6 {
     order: 3;
   }
 }
+
+.header-social-links {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+@media (max-width: 768px) {
+  .header-social-links {
+    flex-direction: row; /* switch to horizontal on mobile */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu

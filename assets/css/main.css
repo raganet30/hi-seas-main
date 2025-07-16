@@ -467,6 +467,26 @@ h6 {
   }
 }
 
+
+/* NAVIGATION BAR COMPANY NAME */
+
+.responsive-logo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Stack logos vertically on small screens */
+  @media (max-width: 600px) {
+    .responsive-logo {
+      display: block;
+      width: 80%;         /* Adjust width on small screens */
+    }
+  }
+/* NAVIGATION BAR COMPANY NAME */
+
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/

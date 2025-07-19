@@ -852,6 +852,7 @@ section,
 (max-width: 1200px) {
   .hero .carousel {
     min-height: calc(80vh - 48px);
+    
   }
 }
 
@@ -892,6 +893,7 @@ section,
   .hero .container {
     padding: 20px 15px;
     margin: 0 20px 40px 20px;
+    
   }
 
   .hero .container h2 {

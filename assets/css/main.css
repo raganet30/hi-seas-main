@@ -504,6 +504,49 @@ h6 {
 
 
 
+/* for HITOK BRANDING */
+.hover-card {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .hover-card:hover {
+      transform: translateY(-10px);
+    }
+    .animated-button {
+      transition: all 0.3s ease;
+    }
+    .animated-button:hover {
+      padding-right: 25px;
+    }
+    .pulse-button {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .counter-box {
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+      /* color: #0d6efd; */
+    }
+    .cta-container {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border: 1px solid #dee2e6;
+    }
+/* for HITOK BRANDING */
+
+
+
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/

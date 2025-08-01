@@ -192,3 +192,24 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+
+
+// Counter animation
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const increment = target / 200;
+      
+      const updateCounter = () => {
+        const count = +counter.innerText;
+        if(count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      
+      updateCounter();
+    });

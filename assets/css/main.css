@@ -543,7 +543,11 @@ h6 {
     }
 /* for HITOK BRANDING */
 
-
+@media (max-width: 576px) {
+          .hitok-branding-img {
+            max-width: 160px !important;
+          }
+        }
 
 
 

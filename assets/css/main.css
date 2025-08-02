@@ -1485,11 +1485,11 @@ section,
 /*-----------
 # PROJECT SECTION
 -------------*/
-.project-slide-img {
-  height: 550px;
+/* .project-slide-img {
+  height: 1000px;
   object-fit: cover;
 }
-
+ */
 
 
 /*--------------------------------------------------------------
@@ -1771,9 +1771,9 @@ section,
 .service-details .services-list a {
   display: block;
   line-height: 1;
-  padding: 8px 0 8px 15px;
+  padding: 8px 10 8px 15px;
   border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
+  margin: 2px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
 }
@@ -1823,6 +1823,66 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+.project-tab-content .carousel-inner img {
+  max-height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .project-tab-content .carousel-inner img {
+    max-height: 400px;
+  }
+}
+
+
+
+
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.services-list a {
+  display: block;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.services-list a:hover {
+  background: #e2e6ea;
+}
+
+.services-list a.active {
+  background: #bd261b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    
+  }
+
+  .services-list a {
+    flex: 0 0 auto;
+    min-width: max-content;
+    white-space: nowrap;
+    
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section

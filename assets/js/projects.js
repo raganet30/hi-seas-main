@@ -98,7 +98,7 @@
           "assets/img/projects/tower1.jpg",
           "assets/img/projects/tower2.jpg"
         ],
-        location: "Cordillera & Eastern Visayas",
+        location: "Eastern Visayas",
         date: "2021-2023",
         category: "Wireless Infrastructure"
       }

@@ -7,7 +7,8 @@
         images: [
           "assets/img/projects/hitok1.png",
           "assets/img/projects/hitok2.jpeg",
-          "assets/img/projects/hitok3.jpeg"
+          "assets/img/projects/hitok3.jpeg",
+          "assets/img/projects/sample hitok poster 10.png"
         ],
         location: "Nationwide",
         date: "Launched 2024",
@@ -58,8 +59,8 @@
         description: "Utilized Horizontal Directional Drilling (HDD) technology to install fiber optic cables beneath roads, rivers, and urban zones with minimal surface disruption. This innovative approach enabled secure and efficient underground connectivity for enterprise clients and ISPs while significantly reducing environmental impact and community disruption compared to traditional trenching methods.",
         images: [
           "assets/img/projects/hdd1.jpg",
-          "assets/img/projects/hdd2.jpg",
-          "assets/img/projects/hdd3.jpg"
+          "assets/img/projects/hdd2.png",
+          "assets/img/projects/hdd4.png"
         ],
         location: "Metro Manila & Provincial Areas",
         date: "2021-2023",
@@ -71,7 +72,7 @@
         description: "Deployed aerial fiber lines across challenging terrains, connecting rural municipalities to high-speed internet. This critical infrastructure brings reliable connectivity to remote areas, fostering economic growth and access to information. Our installations use weather-resistant cabling and robust support structures designed to withstand tropical storm conditions common in the Philippines.",
         images: [
           "assets/img/projects/osp.webp",
-          "assets/img/projects/no-image.png",
+          "assets/img/projects/osp1.png",
           "assets/img/projects/no-image.png"
         ],
         location: "Eastern Visayas Region",

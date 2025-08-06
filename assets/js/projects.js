@@ -25,7 +25,7 @@
         ],
         location: "Multiple Barangays",
         date: "Ongoing since 2022",
-        category: "Community Initiative"
+        category: "Community WiFi"
       },
       {
         id: 2,
@@ -60,7 +60,9 @@
         images: [
           "assets/img/projects/hdd1.jpg",
           "assets/img/projects/hdd2.png",
-          "assets/img/projects/hdd4.png"
+          "assets/img/projects/hdd3.png",
+          "assets/img/projects/hdd4.png",
+          "assets/img/projects/hdd5.png"
         ],
         location: "Metro Manila & Provincial Areas",
         date: "2021-2023",
@@ -73,7 +75,9 @@
         images: [
           "assets/img/projects/osp.webp",
           "assets/img/projects/osp1.png",
-          "assets/img/projects/no-image.png"
+          "assets/img/projects/osp2.png",
+          "assets/img/projects/osp3.png",
+          "assets/img/projects/osp4.png"
         ],
         location: "Eastern Visayas Region",
         date: "2022-2023",

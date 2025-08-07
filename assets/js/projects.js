@@ -6,8 +6,8 @@
         description: "Integrated messaging and communication platform designed specifically for the community. HiTok combines secure messaging, voice calls, and file sharing with localized features and interfaces. The platform is optimized for varying network conditions, ensuring reliable communication even in areas with limited bandwidth.",
         images: [
           "assets/img/projects/hitok1.png",
-          "assets/img/projects/hitok2.jpeg",
-          "assets/img/projects/hitok3.jpeg",
+          "assets/img/projects/hitok.jpg",
+          
           "assets/img/projects/sample hitok poster 10.png"
         ],
         location: "Nationwide",
@@ -79,7 +79,6 @@
           "assets/img/projects/osp.webp",
           "assets/img/projects/osp1.png",
           "assets/img/projects/osp2.png",
-          "assets/img/projects/osp3.png",
           "assets/img/projects/osp4.png"
         ],
         location: "Eastern Visayas Region",

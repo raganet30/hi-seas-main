@@ -46,6 +46,9 @@
         title: "Technical Survey & Design",
         description: "Conducted detailed site assessments and network mapping to ensure accurate, efficient, and scalable infrastructure planning. Our team uses advanced GIS tools and network simulation software to create optimal designs that account for terrain challenges, future growth, and cost efficiency. This meticulous approach guarantees infrastructure that delivers optimal performance with future-proof solutions.",
         images: [
+          "assets/img/projects/survey5.png",
+          "assets/img/projects/survey6.png",
+          "assets/img/projects/survey1.jpg",
           "assets/img/projects/survey2.jpg",
           "assets/img/projects/survey3.jpg"
         ],

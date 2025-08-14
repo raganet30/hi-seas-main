@@ -2932,4 +2932,58 @@ section,
 }
 
 
+/* styling for HiTok R&D capabilites */
+/* Branding colors */
+  .text-brand { color: #bd261b !important; }
+  .bg-brand { background-color: #bd261b !important; }
+  .btn-brand {
+    background-color: #bd261b;
+    color: #fff;
+    border: none;
+  }
+  .btn-brand:hover {
+    background-color: #a01f15;
+    color: #fff;
+  }
+  .btn-outline-brand {
+    color: #bd261b;
+    border: 2px solid #bd261b;
+  }
+  .btn-outline-brand:hover {
+    background-color: #bd261b;
+    color: #fff;
+  }
+  /* Section background with subtle brand tone */
+  .bg-tech {
+    background: radial-gradient(1200px 600px at 85% -10%, rgba(189,38,27,0.12), transparent 60%),
+                radial-gradient(800px 400px at -10% 110%, rgba(189,38,27,0.08), transparent 60%),
+                #f8fafc;
+  }
+  .stat-card {
+    border-radius: 1rem;
+    box-shadow: 0 6px 22px rgba(0,0,0,.06);
+  }
+  .stat-value {
+    font-weight: 800;
+    letter-spacing: .5px;
+  }
+  .icon-xl { font-size: 2.25rem; line-height: 1; }
+  @media (max-width: 767.98px) {
+    #hitok-highlight h2 { font-size: 1.75rem; }
+  }
 
+/* lottie player */
+.lottie-wrapper {
+  max-width: 520px;
+}
+
+.lottie-wrapper dotlottie-wc {
+  width: 80%;
+  height: 400px; /* Desktop height */
+}
+
+@media (max-width: 768px) {
+  .lottie-wrapper dotlottie-wc {
+    height: 300px; /* Mobile height */
+  }
+}

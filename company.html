@@ -32,20 +32,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <style>
-    .accomplishment-item {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-    }
 
-    .accomplishment-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      background-color: #f8f9fa;
-    }
-  </style>
 </head>
 
 <body class="about-page">
@@ -64,12 +51,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="index.html">Executive Profiles</a></li>
-              <li><a href="about.html">About Us</a></li>
-            </ul>
-          </li>
+
+          <li><a class="active" href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="careers.html">Careers</a></li>
@@ -94,169 +77,117 @@
     <!-- Page Title -->
     <div class="page-title accent-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Accomplishments</h1>
+        <h1 class="mb-2 mb-lg-0">About</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Accomplishments</li>
+            <li class="current">About</li>
           </ol>
         </nav>
       </div>
-    </div>
-    <!-- End Page Title -->
+    </div><!-- End Page Title -->
 
-    <!-- Accomplishments Section -->
-    <section id="pricing" class="pricing section bg-light">
+    <!-- About Section -->
+    <section id="about" class="about section">
+
       <div class="container">
 
-        <div class="section-title text-center mb-5" data-aos="fade-up">
-          <h2>Our Technical Accomplishments</h2>
-          <p>As part of the successful implementation of the company, the following achievements were delivered:</p>
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img
+              src="assets/img/hiseas building w logo.jpg" style="object-fit: cover"></div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h2 class="inner-title">Overview</h2> -->
+            <div class="our-story">
+              <h4>Overview</h4>
+              <h3>Our Company</h3>
+              <p >Founded in 2019, <b>HI-SEAS CO. LTD. INC.</b> began with a strong foundation in telecommunications and
+                engineering services, building the infrastructure that keeps people and businesses connected. Over time,
+                our mission evolved from providing technical expertise to creating innovative solutions that transform
+                how communities and organizations communicate.
+                Leading our innovations is <b>HiTok</b>  — an integrated messaging platform designed to make collaboration
+                seamless and redefine digital communication. More than just a product, HiTok embodies our
+                commitment to turning ideas into practical, scalable solutions that address real-world challenges in
+                today’s fast-paced digital environment.
+                <br>Through our <b>Barangay Broadband Project</b> , we delivers community-based WiFi platform that provide both
+                free and affordable internet access across the Philippines. This initiative extends connectivity to
+                underserved and remote areas, promoting digital inclusion, supporting businesses, and strengthening
+                community development.
+                <br>Backed by industry accreditations such as the <b>PCAB License</b> and <b>VAS Certificate</b> , we continue to uphold
+                the highest standards of reliability and trust.
+                As we look to the future, our commitment remains clear: to be a trusted partner in communication,
+                innovation, and growth—developing technologies that not only connect people, but also create
+                opportunities for a more inclusive and digitally empowered Philippines.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>One Stop Engineering Solutions </span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Software development</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Telecom Operation Expertise</span></li>
+              </ul>
+              <p>
+
+              </p>
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="#" class="glightbox stretched-link">Watch Video</a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="row gy-4">
-          <!-- Item 1 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-primary"><i class="bi bi-shield-lock"></i></div>
-                <div>
-                  <h5 class="fw-bold">HDD Non-Trenching and Cable Blowing</h5>
-                  <p class="mb-0">Enabled underground cable installations without major surface disruptions, reducing
-                    environmental impact.</p>
-                </div>
-              </div>
+        <!-- Static 4-column Mission/Vision Section -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
+          <!-- Mission -->
+          <div class="col">
+            <div class="p-3 border rounded h-100 shadow-sm">
+              <h5 class="text-muted fw-bold">Our Mission</h5>
+              <p class="mb-0">To provide world-class engineering and telecom solutions that empower communities and
+                businesses across the Philippines and beyond.</p>
             </div>
           </div>
 
-
-          <!-- Item 2 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-success"><i class="bi bi-diagram-3"></i></div>
-                <div>
-                  <h5 class="fw-bold">OSP Aerial Installation</h5>
-                  <p class="mb-0">Completed outside plant installations using aerial infrastructure for rapid
-                    deployment.</p>
-                </div>
-              </div>
+          <!-- Vision -->
+          <div class="col">
+            <div class="p-3 border rounded h-100 shadow-sm">
+              <h5 class="text-muted fw-bold">Our Vision</h5>
+              <p class="mb-0">To be a leader in innovative infrastructure development, driven by integrity, technology,
+                and excellence.</p>
             </div>
           </div>
 
-          <!-- Item 3 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-danger"><i class="bi bi-activity"></i></div>
-                <div>
-                  <h5 class="fw-bold">Emergency Splicing and Testing</h5>
-                  <p class="mb-0">Performed critical fiber splicing and signal testing to maintain network reliability.
-                  </p>
-                </div>
-              </div>
+          <!-- Goals -->
+          <div class="col">
+            <div class="p-3 border rounded h-100 shadow-sm">
+              <h5 class="text-muted fw-bold">Our Goals</h5>
+              <ul class="mb-0 ps-3">
+                <li>Expand service coverage nationwide</li>
+                <li>Integrate smart technologies</li>
+                <li>Foster global partnerships</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Item 4 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-warning"><i class="bi bi-cloud-lightning-rain"></i></div>
-                <div>
-                  <h5 class="fw-bold">Handling Extreme Conditions</h5>
-                  <p class="mb-0">Executed installations and repairs under challenging environmental conditions.</p>
-                </div>
-              </div>
+          <!-- Achievements -->
+          <div class="col">
+            <div class="p-3 border rounded h-100 shadow-sm">
+              <h5 class="text-muted fw-bold">Our Achievements</h5>
+              <p class="mb-0">We’ve completed major projects across telecom infrastructure nationwide.</p>
             </div>
           </div>
-
-          <!-- Item 5 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-info"><i class="bi bi-building"></i></div>
-                <div>
-                  <h5 class="fw-bold">IDC Construction</h5>
-                  <p class="mb-0">Built centralized hubs for efficient data processing and management.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 6 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-secondary"><i class="bi bi-router-fill"></i></div>
-                <div>
-                  <h5 class="fw-bold">Base Station Civil Works & Telecom Installation</h5>
-                  <p class="mb-0">Constructed and equipped base stations to expand wireless coverage.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 7 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-primary"><i class="bi bi-building-check"></i></div>
-                <div>
-                  <h5 class="fw-bold">IBS Projects</h5>
-                  <p class="mb-0">Installed indoor signal distribution systems to improve connectivity within buildings.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 8 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="450">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-success"><i class="bi bi-rulers"></i></div>
-                <div>
-                  <h5 class="fw-bold">Technical Survey and Design</h5>
-                  <p class="mb-0">Conducted in-depth technical assessments and created tailored network plans.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 9 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-danger"><i class="bi bi-file-earmark-check"></i></div>
-                <div>
-                  <h5 class="fw-bold">Right-of-Way and Permitting</h5>
-                  <p class="mb-0">Secured all necessary permissions to ensure lawful and uninterrupted project
-                    execution.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 10 -->
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="550">
-            <div class="accomplishment-item">
-              <div class="d-flex">
-                <div class="me-3 fs-3 text-dark"><i class="bi bi-tools"></i></div>
-                <div>
-                  <h5 class="fw-bold">Comprehensive Maintenance</h5>
-                  <p class="mb-0">Provided ongoing support, troubleshooting, and performance optimization services.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
         </div>
+
       </div>
-    </section>
 
+
+    </section>
+    <!-- /About Section -->
+
+
+   
 
   </main>
 
@@ -331,6 +262,7 @@
     </div>
 
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -350,6 +282,22 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Scroll script -->
+  <script>
+    const timeline = document.querySelector('.timeline-modern');
+    const prevBtn = document.getElementById('timeline-prev');
+    const nextBtn = document.getElementById('timeline-next');
+    const scrollAmount = 250;
+
+    prevBtn.addEventListener('click', () => {
+      timeline.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      timeline.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  </script>
+
 
 </body>
 

@@ -1202,81 +1202,109 @@ section,
 
 
 
+/* TIMELINE STYLING */
+/* General Timeline Styling */
+#timeline-appealing {
+  position: relative;
+  overflow: hidden; 
+}
 
- /* Wrapper for horizontal scrolling timeline */
-    .timeline-wrapper {
-      position: relative;
-      overflow: hidden;
-    }
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  position: relative;
+  padding: 40px 0; 
+}
 
-    /* Horizontal timeline container */
-    .timeline-modern {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding: 40px 0;
-      border-top: 2px dashed #2e2e2e;
-      scroll-behavior: smooth;
-    }
+/* The horizontal connecting line */
+.timeline-line {
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  right: 0;
+  height: 2px; 
+  background-color: #d8d8d8; 
+  z-index: 0; 
+  transform: translateY(-50%); 
+}
 
-    .timeline-modern::-webkit-scrollbar {
-      display: none;
-    }
+/* Individual Timeline Event */
+.timeline-event {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 250px; 
+  margin: 0 20px; 
+  text-align: center;
+  position: relative;
+  z-index: 1; 
+  padding-top: 20px; 
+  padding-bottom: 20px;
+}
 
-    /* Timeline item */
-    .timeline-step {
-      flex: 0 0 auto;
-      min-width: 200px;
-      text-align: center;
-      padding: 0 10px;
-      scroll-snap-align: center;
-    }
+/* Content card for each event */
+.timeline-content {
+  margin-top: 10px; 
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .timeline-step .dot {
-      width: 20px;
-      height: 20px;
-      background-color: #bd261b;
-      border-radius: 50%;
-      border: 5px solid #f8d2cd;
-      margin: 0 auto;
-      position: relative;
-      top: -11px;
-      z-index: 1;
-    }
+.timeline-content:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
-    /* Arrow buttons (carousel style) */
-    .timeline-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 255, 255, 0.9);
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 10;
-      border-radius: 50%;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
+.timeline-content .card-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
 
-    .timeline-arrow-left {
-      left: 0;
-    }
+.timeline-content .card-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #666;
+}
 
-    .timeline-arrow-right {
-      right: 0;
-    }
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .timeline-event {
+    width: 90%; 
+    margin: 1px 0; 
+  }
 
-    @media (max-width: 768px) {
-      .timeline-step {
-        min-width: 180px;
-      }
+  .timeline-container {
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 30px; 
+  }
 
-      .timeline-arrow {
-        padding: 6px 10px;
-      }
-    }
+  .timeline-line {
+    width: 2px; 
+    height: calc(100% - 40px); 
+    top: 20px; 
+    left: 15px; 
+    transform: none; 
+  }
+  
+  .timeline-event {
+    padding-top: 0; 
+    padding-bottom: 0; 
+    margin-left: 0; 
+  }
+
+  .timeline-content {
+    text-align: left;
+    margin-left: 20px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
 
 
 /*--------------------------------------------------------------

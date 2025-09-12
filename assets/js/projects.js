@@ -23,9 +23,10 @@ const projects = [
       + "\nMore than just connectivity, BBP supports local growth and inclusion. HiTok enhances community engagement with messaging, calls, and social features, moments, people nearby connectivity, while also integrating e-wallet and payment solutions. Future developments aim to expand its ecosystem with services such as microloans, e-commerce, and ride-hailing — helping communities participate more fully in the digital economy."
       + "\nWith BBP, Hi-Seas is bridging the digital divide and building opportunities for a more connected, inclusive Philippines.",
     images: [
-      "assets/img/projects/no-image.png",
-      "assets/img/projects/no-image.png",
-      "assets/img/projects/no-image.png",
+      "assets/img/projects/bbp1.png",
+      "assets/img/projects/bbp2.png",
+      "assets/img/projects/bbp3.png",
+      "assets/img/projects/bbp4.png"
     ],
     location: "Multiple Barangays",
     date: "Ongoing since 2022",

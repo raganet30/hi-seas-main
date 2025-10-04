@@ -1,0 +1,7 @@
+Array
+(
+    [name] => test
+    [email] => test@gmail.com
+    [subject] => test
+    [message] => asasas
+)

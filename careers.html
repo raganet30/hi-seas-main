@@ -158,14 +158,20 @@
         </div>
 
         <!-- Job Listings -->
+        <!-- Job Listings -->
         <div class="row">
+
           <!-- Job 1 -->
           <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h4 class="card-title">Administrative Assistant</h4>
+                <h4 class="card-title d-flex align-items-center justify-content-between">
+                  Administrative Assistant
+                  <i class="bi bi-info-circle text-secondary ms-2" style="cursor: pointer;" data-bs-toggle="modal"
+                    data-bs-target="#jobModalAdmin"></i>
+                </h4>
                 <p class="text-muted mb-1">Location: Calbayog City, Samar</p>
-                <p class="text-muted mb-3">Full-time | On-site</p>
+                <p class="text-muted mb-3">Full-time | In-office</p>
                 <button class="btn btn-outline-danger" onclick="openJobEmailModal('Administrative Assistant')">Apply
                   Now</button>
               </div>
@@ -176,9 +182,13 @@
           <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h4 class="card-title">Marketing Associate</h4>
+                <h4 class="card-title d-flex align-items-center justify-content-between">
+                  Marketing Associate
+                  <i class="bi bi-info-circle text-secondary ms-2" style="cursor: pointer;" data-bs-toggle="modal"
+                    data-bs-target="#jobModalMarketing"></i>
+                </h4>
                 <p class="text-muted mb-1">Location: Calbayog City, Samar</p>
-                <p class="text-muted mb-3">Full-time | On-site</p>
+                <p class="text-muted mb-3">Full-time | In-office/On-site</p>
                 <button class="btn btn-outline-danger" onclick="openJobEmailModal('Marketing Associate')">Apply
                   Now</button>
               </div>
@@ -189,7 +199,11 @@
           <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h4 class="card-title">Electrician</h4>
+                <h4 class="card-title d-flex align-items-center justify-content-between">
+                  Electrician
+                  <i class="bi bi-info-circle text-secondary ms-2" style="cursor: pointer;" data-bs-toggle="modal"
+                    data-bs-target="#jobModalElectrician"></i>
+                </h4>
                 <p class="text-muted mb-1">Location: Calbayog City, Samar</p>
                 <p class="text-muted mb-3">Full-time | On-site</p>
                 <button class="btn btn-outline-danger" onclick="openJobEmailModal('Electrician')">Apply Now</button>
@@ -201,15 +215,21 @@
           <div class="col-md-6 mb-4">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h4 class="card-title">Accounting Associate</h4>
+                <h4 class="card-title d-flex align-items-center justify-content-between">
+                  Accounting Associate
+                  <i class="bi bi-info-circle text-secondary ms-2" style="cursor: pointer;" data-bs-toggle="modal"
+                    data-bs-target="#jobModalAccounting"></i>
+                </h4>
                 <p class="text-muted mb-1">Location: Calbayog City, Samar</p>
-                <p class="text-muted mb-3">Full-time | On-site</p>
+                <p class="text-muted mb-3">Full-time | In-office</p>
                 <button class="btn btn-outline-danger" onclick="openJobEmailModal('Accounting Associate')">Apply
                   Now</button>
               </div>
             </div>
           </div>
+
         </div>
+
 
         <!-- Job Application CTA -->
         <div class="text-center mt-5">
@@ -259,6 +279,134 @@
         style="z-index: 2000;">
         <i class="bi bi-check-circle me-2"></i> Email address copied to clipboard!
       </div>
+
+
+
+      <!-- Administrative Assistant Modal -->
+      <div class="modal fade" id="jobModalAdmin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-danger text-white rounded-top-4">
+              <h5 class="modal-title"><i class="bi bi-briefcase me-2"></i> Administrative Assistant</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+              <h6 class="text-danger fw-bold mb-2">Job Description</h6>
+              <p>Provides administrative and clerical support to ensure efficient operation of the office, including
+                document management, scheduling, and coordination.</p>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Qualifications</h6>
+              <ul>
+                <li>Bachelor’s degree in Office Administration or related field</li>
+                <li>Proficient in Microsoft Office applications</li>
+                <li>Strong organizational and communication skills</li>
+                <li>Experience in an office setting preferred</li>
+              </ul>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Responsibilities</h6>
+              <ul>
+                <li>Prepare and manage correspondence, reports, and documents</li>
+                <li>Organize meetings, appointments, and admin tasks</li>
+                <li>Maintain filing systems and record-keeping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing Associate Modal -->
+      <div class="modal fade" id="jobModalMarketing" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-danger text-white rounded-top-4">
+              <h5 class="modal-title"><i class="bi bi-megaphone me-2"></i> Marketing Associate</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+              <h6 class="text-danger fw-bold mb-2">Job Description</h6>
+              <p>Supports marketing initiatives through research, social media management, and event coordination to
+                strengthen brand awareness.</p>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Qualifications</h6>
+              <ul>
+                <li>Bachelor’s degree in Marketing, Business, or related field</li>
+                <li>Strong understanding of digital and social media trends</li>
+                <li>Excellent written and verbal communication skills</li>
+              </ul>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Responsibilities</h6>
+              <ul>
+                <li>Assist in campaign creation and execution</li>
+                <li>Coordinate promotional events and materials</li>
+                <li>Analyze market data and report insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrician Modal -->
+      <div class="modal fade" id="jobModalElectrician" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-danger text-white rounded-top-4">
+              <h5 class="modal-title"><i class="bi bi-lightning me-2"></i> Electrician</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+              <h6 class="text-danger fw-bold mb-2">Job Description</h6>
+              <p>Installs, maintains, and repairs electrical systems and equipment to ensure operational safety and
+                efficiency.</p>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Qualifications</h6>
+              <ul>
+                <li>Vocational course or certification in Electrical Installation</li>
+                <li>TESDA certification is an advantage</li>
+                <li>Knowledge of electrical safety codes</li>
+              </ul>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Responsibilities</h6>
+              <ul>
+                <li>Perform electrical wiring and maintenance</li>
+                <li>Troubleshoot system issues and perform repairs</li>
+                <li>Ensure compliance with safety standards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting Associate Modal -->
+      <div class="modal fade" id="jobModalAccounting" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-danger text-white rounded-top-4">
+              <h5 class="modal-title"><i class="bi bi-calculator me-2"></i> Accounting Associate</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+              <h6 class="text-danger fw-bold mb-2">Job Description</h6>
+              <p>Handles accounting tasks including bookkeeping, report generation, and assisting in financial audits.
+              </p>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Qualifications</h6>
+              <ul>
+                <li>Bachelor’s degree in Accountancy, Finance, or related field</li>
+                <li>Proficiency in accounting software and MS Excel</li>
+                <li>Strong attention to detail</li>
+              </ul>
+
+              <h6 class="text-danger fw-bold mt-4 mb-2">Responsibilities</h6>
+              <ul>
+                <li>Maintain accurate financial records</li>
+                <li>Assist in preparing financial statements</li>
+                <li>Support month-end and year-end closing processes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Script -->
@@ -297,20 +445,7 @@
       </div>
     </div>
 
-    <script>
-      function openCareerEmailModal(role) {
-        document.getElementById('careerRole').textContent = role;
-        const modal = new bootstrap.Modal(document.getElementById('careerEmailModal'));
-        modal.show();
 
-        const subject = encodeURIComponent(`JOB_APPLICATION_${role.replace(/\s+/g, '_').toUpperCase()}`);
-        const email = 'careers@hi-seas.ph';
-
-        document.getElementById('careerGmail').href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
-        document.getElementById('careerYahoo').href = `https://compose.mail.yahoo.com/?to=${email}&subject=${subject}`;
-        document.getElementById('careerOutlook').href = `https://outlook.live.com/mail/0/deeplink/compose?to=${email}&subject=${subject}`;
-      }
-    </script>
 
 
     <!-- End Careers Section -->
@@ -411,6 +546,21 @@
   <script src="assets/js/main.js"></script>
 
   <script>
+
+    function openCareerEmailModal(role) {
+      document.getElementById('careerRole').textContent = role;
+      const modal = new bootstrap.Modal(document.getElementById('careerEmailModal'));
+      modal.show();
+
+      const subject = encodeURIComponent(`JOB_APPLICATION_${role.replace(/\s+/g, '_').toUpperCase()}`);
+      const email = 'careers@hi-seas.ph';
+
+      document.getElementById('careerGmail').href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
+      document.getElementById('careerYahoo').href = `https://compose.mail.yahoo.com/?to=${email}&subject=${subject}`;
+      document.getElementById('careerOutlook').href = `https://outlook.live.com/mail/0/deeplink/compose?to=${email}&subject=${subject}`;
+    }
+
+
     function openJobEmailModal(role) {
       const subject = role ? `JOB_APPLICATION_${role.replace(/\s+/g, '_').toUpperCase()}` : 'JOB_APPLICATION';
       const email = 'careers@hi-seas.ph';
@@ -445,6 +595,10 @@
         }, 1500);
       });
     }
+
+
+
+
   </script>
 
 </body>

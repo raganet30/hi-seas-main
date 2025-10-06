@@ -240,14 +240,13 @@
                 aria-label="Close"></button>
             </div>
             <div class="modal-body text-center p-4">
-              <p class="mb-4 text-muted text-center">
+              <p class="mb-4 text-muted">
                 Select how you’d like to send your message to <br>
-                <strong class="text-dark">hiwifi@hi-seas.ph</strong>
-                <button class="btn btn-outline-secondary btn-sm rounded-pill ms-2 mt-2 mt-md-0 shadow-sm"
-                  onclick="copyEmail()">
-                  <i class="bi bi-clipboard-check me-1"></i> Copy Email Address
-                </button>
+                <strong id="emailAddress">hiwifi@hi-seas.ph</strong>
+                <i class="bi bi-clipboard text-secondary ms-2" style="cursor:pointer;" onclick="copyEmail(event)"
+                  title="Copy Email"></i>
               </p>
+
 
 
 
@@ -271,6 +270,14 @@
           </div>
         </div>
       </div>
+
+      <!-- Success Copy Alert -->
+      <div id="copyAlert" class="alert alert-success position-fixed top-0 start-50 translate-middle-x shadow-sm d-none"
+        role="alert" style="z-index: 2000; margin-top: 1rem; transition: all 0.5s ease;">
+        <i class="bi bi-check-circle me-2"></i> Email address copied to clipboard!
+      </div>
+
+
 
     </section>
 
@@ -391,10 +398,27 @@
     }
 
     // Copy email function
-    function copyEmail() {
-      const email = 'hiwifi@hi-seas.ph';
-      navigator.clipboard.writeText(email);
-      alert('Email address copied to clipboard!');
+    function copyEmail(event) {
+      const emailText = document.getElementById('emailAddress').textContent.trim();
+      navigator.clipboard.writeText(emailText).then(() => {
+        const alertBox = document.getElementById('copyAlert');
+        alertBox.classList.remove('d-none');
+        alertBox.style.opacity = '1';
+
+        // Fade out after 2 seconds
+        setTimeout(() => {
+          alertBox.style.opacity = '0';
+          setTimeout(() => alertBox.classList.add('d-none'), 500);
+        }, 2000);
+
+        const icon = event.target;
+        icon.classList.remove('bi-clipboard');
+        icon.classList.add('bi-check-circle-fill', 'text-success');
+        setTimeout(() => {
+          icon.classList.remove('bi-check-circle-fill', 'text-success');
+          icon.classList.add('bi-clipboard');
+        }, 1500);
+      });
     }
   </script>
 
